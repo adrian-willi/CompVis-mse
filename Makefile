@@ -30,11 +30,11 @@ clean: ##@Utils Cleans the project
 # JUPYTER
 ###########################
 .PHONY: start_jupyter
-start_jupyter: ##@Jupyterlab Starts jupyterlab service
+start_jupyter: ##@Jupyterlab Starts jupyter lab service
 	@echo "Starting jupyter lab"
 	$(NOTEBOOK_DOCKER_START)
 
-.Phony: stop_jupyter
-stop_jupyter: ##@Jupyterlab Stop Jupyterlab service
-	@echo "Stop Jupyter lab"
+.PHONY stop_jupyter
+stop_jupyter: ##@Jupyterlab Stops jupyter lab service
+	@echo "Stopping jupyter lab"
 	$(NOTEBOOK_DOCKER_STOP)
