@@ -34,7 +34,7 @@ start_jupyter: ##@Jupyterlab Starts jupyter lab service
 	@echo "Starting jupyter lab"
 	$(NOTEBOOK_DOCKER_START)
 
-.PHONY stop_jupyter
+.PHONY: stop_jupyter
 stop_jupyter: ##@Jupyterlab Stops jupyter lab service
 	@echo "Stopping jupyter lab"
 	$(NOTEBOOK_DOCKER_STOP)
